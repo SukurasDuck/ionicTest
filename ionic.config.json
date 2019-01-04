@@ -1,5 +1,8 @@
 {
   "name": "newIonicDemo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

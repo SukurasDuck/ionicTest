@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Three
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="hero">
+    <h2>{{hero.name|uppercase}} Details</h2>
+    <ion-button (click)="func()">
+      Click me
+    </ion-button>
+    <ion-button (click)="func2()">
+      Alert
+    </ion-button>
+    <ion-button (click)="func3()">
+      Anthor
+    </ion-button>
+    <ion-button color="primary" (click)="func4()">
+      Badge
+    </ion-button>
+  </div>
+  <ion-item>
+    <ion-label>datetime</ion-label>
+    <ion-button color="primary" (click)="func5()"> Datetime </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-label>datetime</ion-label>
+    <ion-button color="primary" (click)="func6()"> 懒加载 </ion-button>
+  </ion-item>
+  <ion-item>
+      <ion-label>datetime</ion-label>
+      <ion-button color="primary" (click)="func7()"> Loading </ion-button>
+    </ion-item>
+
+  <newdetails (changeNumber)="getSelect($event)"></newdetails>
+</ion-content>

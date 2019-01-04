@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>news</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="hero">
+    <div><span>id: </span>{{hero.id}}</div>
+    <div><span>name: </span>{{hero.name}}</div>
+    <a routerLink='../newdetails/{{hero.id}}'>链接</a>
+  </div>
+  <hr>
+  <newdetails (changeNumber)="getchildhero($event)"></newdetails>
+</ion-content>

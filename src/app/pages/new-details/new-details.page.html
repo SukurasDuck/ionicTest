@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>newDetails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="hero">
+    <div>
+      <label>id:
+        <input [(ngModel)]="hero.id" placeholder="id" />
+      </label>
+    </div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name" />
+      </label>
+    </div>
+    <div>
+      <button (click)="goBack()">go back</button>
+    </div>
+  </div>
+</ion-content>
